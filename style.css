@@ -1,0 +1,92 @@
+@import 'reset.css';
+
+body {
+  background: #e8bebc;
+  height: 100vh;
+}
+.hamburger {
+  position: absolute;
+  right: 36px;
+  top: 20px;
+  font-size: 2rem;
+  color: #1a4446;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover {
+  transform: scale(1.2);
+}
+
+.sidebar {
+  background: white;
+  position: fixed;
+  width: 400px;
+  height: 100vh;
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.xbutton {
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.xbutton:hover {
+  transform: rotate(90deg);
+}
+
+.menu {
+  padding: 1rem 0rem;
+  font-size: 1.1rem;
+}
+
+.menu li {
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu li:hover {
+  color: grey;
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+  margin-top: auto;
+}
+
+.socialmedia li {
+  font-size: 1.4rem;
+  margin-right: 1.2rem;
+  color: #1a4446;
+}
+
+/* sidebar hide */
+.hide {
+  transform: translate(-100%);
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 500px) {
+  .sidebar {
+    width: 100vw;
+  }
+}
